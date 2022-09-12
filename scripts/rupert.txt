@@ -1,17 +1,17 @@
 Go away!
 -
 What? Don't involve me, I'm innocent!
-+Then why did Betty say you were acting /suspisious leading to the murder?
++Then why did Betty say you were /acting suspisious leading to the /murder?
 Ok, fine...
 I guess I DO know something after all.
-+Where were you the night of the murder?
++Where were you the night of the /murder?
 I was out of town.
 On the road.
-+Do you have anyone to confirm your story.
++Do you have anyone to confirm /your story.
 Not really...
 +Alright.
-+Another question, why were you talking /about Susan a few nights ago?
-I was talking with Rick. He mentioned that /Susan was upset at Big Tony over his past.
++Another question, why were you /talking about Susan a few nights ago?
+I was talking with Rick. He /mentioned that Susan was upset at /Big Tony over his past.
 +What is Big Tony's past?
-Uhhh Ummm, I can't say. No I can not say.
-+Okay... Thank you for your time.
+Uhhh Ummm, I can't say. No I /can not say.
++Okay... Thank you for your /time.

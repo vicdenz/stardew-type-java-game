@@ -114,17 +114,17 @@ public class Main {
     private String[] bettyCustomWords = {
         player.getName()
     };
-    private Dialogue bettyDialogue = new Dialogue("betty", Const.FEMALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, bettyCustomWords, 20);
+    private Dialogue bettyDialogue = new Dialogue("betty", Const.FEMALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, bettyCustomWords, 15);
 
-    private Dialogue rupertDialogue = new Dialogue("rupert", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 20);
+    private Dialogue rupertDialogue = new Dialogue("rupert", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 15);
 
-    private Dialogue chadDialogue = new Dialogue("chad", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 20);
+    private Dialogue chadDialogue = new Dialogue("chad", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 15);
 
-    private Dialogue bradDialogue = new Dialogue("brad", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 20);
+    private Dialogue bradDialogue = new Dialogue("brad", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 15);
 
-    private Dialogue gusDialogue = new Dialogue("gus", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 20);
+    private Dialogue gusDialogue = new Dialogue("gus", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 15);
 
-    private Dialogue gus2Dialogue = new Dialogue("gus2", "gus", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 20);
+    private Dialogue gus2Dialogue = new Dialogue("gus2", "gus", Const.MALE_TALKING_SOUNDS, "detective", Const.MALE_TALKING_SOUNDS, null, 15);
 
     private String[] susanCustomWords = {
         player.getName()
@@ -188,20 +188,20 @@ public class Main {
     private MenuItem[] startMenuItems = {
         new Text(0, 0, "Just A Little", Const.TITLE_FONT, Const.WHITE_COLOR),
         new Text(0, 0, "Murder", Const.TITLE_FONT, Const.RED_COLOR),
-        new Button(new Rect(0, 0, Const.LIGHT_BROWN_COLOR, 100, 50, 20, Const.BROWN_COLOR), new Text(0, 0, "Start Game", Const.VERY_LARGE_FONT, Const.BLACK_COLOR), MouseEvent.MOUSE_CLICKED, -1, Const.WHITE_COLOR, true, true, 20),
-        new Button(new Rect(0, 0, Const.LIGHT_BROWN_COLOR, 100, 50, 20, Const.BROWN_COLOR), new Text(0, 0, "Credits", Const.VERY_LARGE_FONT, Const.BLACK_COLOR), MouseEvent.MOUSE_CLICKED, 1, Const.WHITE_COLOR, true, true, 20)
+        new Button(new Rect(0, 0, Const.LIGHT_BROWN_COLOR, 80, 30, 15, Const.BROWN_COLOR), new Text(0, 0, "Start Game", Const.VERY_LARGE_FONT, Const.BLACK_COLOR), MouseEvent.MOUSE_CLICKED, -1, Const.WHITE_COLOR, true, true, 15),
+        new Button(new Rect(0, 0, Const.LIGHT_BROWN_COLOR, 80, 30, 15, Const.BROWN_COLOR), new Text(0, 0, "Credits", Const.VERY_LARGE_FONT, Const.BLACK_COLOR), MouseEvent.MOUSE_CLICKED, 1, Const.WHITE_COLOR, true, true, 15)
     };
     private Menu startMenu = new Menu(0, 0, Const.WIDTH, Const.HEIGHT, Const.BLACK_COLOR, startMenuItems);
 
     // credits menu items
     private MenuItem[] creditsMenuItems = {
-        new Text(0, 0, "Credits:", Const.TITLE_FONT, Const.RED_COLOR),
-        new Text(0, 0, "Creator, Lead Programmer, Map", Const.VERY_LARGE_FONT, Const.WHITE_COLOR),
-        new Text(0, 0, "Designer, and Scriptwriter:", Const.VERY_LARGE_FONT, Const.WHITE_COLOR),
-        new Text(0, 0, "David Daniliuc", Const.VERY_LARGE_FONT, Const.RED_COLOR),
-        new Text(0, 0, "Asset Artist:", Const.VERY_LARGE_FONT, Const.WHITE_COLOR),
-        new Text(0, 0, "LimeZu on itch.io", Const.VERY_LARGE_FONT, Const.RED_COLOR),
-        new Button(new Rect(0, 0, Const.LIGHT_BROWN_COLOR, 100, 50, 20, Const.BROWN_COLOR), new Text(0, 0, "Go Back", Const.VERY_LARGE_FONT, Const.BLACK_COLOR), MouseEvent.MOUSE_CLICKED, 0, Const.WHITE_COLOR, true, true, 20)
+        new Text(0, 0, "Credits:", Const.VERY_LARGE_FONT, Const.RED_COLOR),
+        new Text(0, 0, "Creator, Lead Programmer, Map", Const.LARGE_FONT, Const.WHITE_COLOR),
+        new Text(0, 0, "Designer, and Scriptwriter:", Const.LARGE_FONT, Const.WHITE_COLOR),
+        new Text(0, 0, "David Daniliuc", Const.LARGE_FONT, Const.RED_COLOR),
+        new Text(0, 0, "Asset Artist:", Const.LARGE_FONT, Const.WHITE_COLOR),
+        new Text(0, 0, "LimeZu on itch.io", Const.LARGE_FONT, Const.RED_COLOR),
+        new Button(new Rect(0, 0, Const.LIGHT_BROWN_COLOR, 100, 50, 15, Const.BROWN_COLOR), new Text(0, 0, "Go Back", Const.LARGE_FONT, Const.BLACK_COLOR), MouseEvent.MOUSE_CLICKED, 0, Const.WHITE_COLOR, true, true, 15)
     };
     private Menu creditsMenu = new Menu(0, 0, Const.WIDTH, Const.HEIGHT, Const.BLACK_COLOR, creditsMenuItems);
 
@@ -252,16 +252,16 @@ public class Main {
         // Positioning menus
         ((Text) menus[0].getMenuItem(0)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4);
         ((Text) menus[0].getMenuItem(1)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 120);
-        ((Button) menus[0].getMenuItem(2)).centerButton(Const.WIDTH / 4, Const.HEIGHT / 3 * 2);
-        ((Button) menus[0].getMenuItem(3)).centerButton(Const.WIDTH / 4 * 3, Const.HEIGHT / 3 * 2);
+        ((Button) menus[0].getMenuItem(2)).centerButton(Const.WIDTH / 4, Const.HEIGHT / 3 * 2 + 40);
+        ((Button) menus[0].getMenuItem(3)).centerButton(Const.WIDTH / 4 * 3, Const.HEIGHT / 3 * 2 + 40);
 
-        ((Text) menus[1].getMenuItem(0)).centerText(Const.WIDTH / 2, 100);
-        ((Text) menus[1].getMenuItem(1)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 40);
-        ((Text) menus[1].getMenuItem(2)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 120);
-        ((Text) menus[1].getMenuItem(3)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 220);
-        ((Text) menus[1].getMenuItem(4)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 360);
-        ((Text) menus[1].getMenuItem(5)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 460);
-        ((Button) menus[1].getMenuItem(6)).centerButton(Const.WIDTH / 2, Const.HEIGHT - 200);
+        ((Text) menus[1].getMenuItem(0)).centerText(Const.WIDTH / 2, 50);
+        ((Text) menus[1].getMenuItem(1)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4);
+        ((Text) menus[1].getMenuItem(2)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 60);
+        ((Text) menus[1].getMenuItem(3)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 120);
+        ((Text) menus[1].getMenuItem(4)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 220);
+        ((Text) menus[1].getMenuItem(5)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 280);
+        ((Button) menus[1].getMenuItem(6)).centerButton(Const.WIDTH - 100, Const.HEIGHT - 100);
 
         ((Text) menus[2].getMenuItem(0)).centerText(Const.WIDTH / 2, 100);
         ((Text) menus[2].getMenuItem(1)).centerText(Const.WIDTH / 2, Const.HEIGHT / 4 + 40);

@@ -114,13 +114,14 @@ public class Dialogue {
             System.out.println("Unable to parse Dialogue file. " + scriptName);
         }
 
-        this.textBox = new Rect(0, 0, Const.LIGHT_BROWN_COLOR, Const.WIDTH / 3 * 2, Const.HEIGHT / 6, this.margin, Const.BROWN_COLOR);
+        this.textBox = new Rect(0, 0, Const.LIGHT_BROWN_COLOR, Const.WIDTH / 3 * 2, Const.HEIGHT / 5, this.margin, Const.BROWN_COLOR);
         this.textBox.centerRect(Const.WIDTH / 2, Const.HEIGHT / 5 * 4);
 
-        this.speaker1Image = new Image(this.textBox.getX() + this.margin, this.textBox.getY() + this.textBox.getHeight() - this.margin, "images/" + speaker1 + "_title.png");
+        this.speaker1Image = new Image(this.textBox.getX(), this.textBox.getY() + this.textBox.getHeight(), "images/" + speaker1 + "_title.png");
         this.speaker1Image.setY(this.speaker1Image.getY() - this.speaker1Image.getHeight());
 
-        this.speaker2Image = new Image(this.textBox.getX() + this.margin, this.textBox.getY() + this.margin * 2, "images/" + speaker2 + "_title.png");
+        this.speaker2Image = new Image(this.textBox.getX(), this.textBox.getY() + this.textBox.getHeight(), "images/" + speaker2 + "_title.png");
+        this.speaker2Image.setY(this.speaker2Image.getY() - this.speaker2Image.getHeight());
 
         this.text = new Paragraph(0, 0, this.lines[this.currentLine], Const.MEDIUM_FONT, Const.BLACK_COLOR);
 
@@ -321,8 +322,8 @@ public class Dialogue {
     public void updateText() {
         this.text.setText(this.lines[this.currentLine]);
 
-        this.text.setX(this.textBox.getX() + this.margin * 2 + this.speaker1Image.getWidth());
-        this.text.setY(this.textBox.getY() + this.margin);
+        this.text.setX(this.textBox.getX() + this.margin + this.speaker1Image.getWidth());
+        this.text.setY(this.textBox.getY());
 
         if (this.speaker2TalkingIndexes[this.currentLine]) {
             this.currentTitleImage = this.speaker2Image;

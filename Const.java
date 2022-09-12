@@ -15,8 +15,8 @@ import java.io.IOException;
 import java.awt.FontFormatException;
 
 public final class Const {
-    public static final int WIDTH = 1600;
-    public static final int HEIGHT = 1200;
+    public static final int WIDTH = 800;
+    public static final int HEIGHT = 600;
     public static final int TILE_SIZE = 64;
     public static final int SPRITE_HEIGHT = 112;
     public static final int FPS = 60;
@@ -25,8 +25,8 @@ public final class Const {
     public static final int OUTSIDE_STEP = 6;
     public static final int INSIDE_STEP = 4;
 
-    public static final double OUTSIDE_ZOOM = 1.2d;
-    public static final double INSIDE_ZOOM = 1.5d;
+    public static final double OUTSIDE_ZOOM = 0.8d;
+    public static final double INSIDE_ZOOM = 1d;
 
     public static final Color WHITE_COLOR = new Color(247, 242, 237);
     public static final Color RED_COLOR = new Color(255, 28, 28);
@@ -49,11 +49,11 @@ public final class Const {
     public static final Color CAVE_COLOR = new Color(19, 18, 12);
 
     private static final Font ROOT_FONT = Const.loadFont("global_font.ttf", 12);
-    public static final Font SMALL_FONT = ROOT_FONT.deriveFont(34f);
-    public static final Font MEDIUM_FONT = ROOT_FONT.deriveFont(52f);
-    public static final Font LARGE_FONT = ROOT_FONT.deriveFont(84f);
-    public static final Font VERY_LARGE_FONT = ROOT_FONT.deriveFont(100f);
-    public static final Font TITLE_FONT = ROOT_FONT.deriveFont(180f);
+    public static final Font SMALL_FONT = ROOT_FONT.deriveFont(12f);
+    public static final Font MEDIUM_FONT = ROOT_FONT.deriveFont(24f);
+    public static final Font LARGE_FONT = ROOT_FONT.deriveFont(42f);
+    public static final Font VERY_LARGE_FONT = ROOT_FONT.deriveFont(64f);
+    public static final Font TITLE_FONT = ROOT_FONT.deriveFont(84f);
 
     public static final Sound MUSIC_SOUND = new Sound("sounds/music.wav");
     public static final Sound CLICK_SOUND = new Sound("sounds/click.wav");
