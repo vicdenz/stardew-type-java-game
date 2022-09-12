@@ -1,0 +1,4 @@
+Door 11,4 -1 4 7,5
+Door 9,12 1 1 3,13 OutsideGus
+Door 21,16 1 2 3,13
+OutsideGus 18,26 S
